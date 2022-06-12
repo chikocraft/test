@@ -1,0 +1,56 @@
+
+
+local ScreenGui = Instance.new("ScreenGui")
+local main = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local sonic = Instance.new("TextButton")
+local sans = Instance.new("TextButton")
+
+--Properties:
+
+ScreenGui.Parent = game.CoreGui
+
+main.Name = "main"
+main.Parent = ScreenGui
+main.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+main.Position = UDim2.new(0.15384616, 0, 0.287974685, 0)
+main.Size = UDim2.new(0, 430, 0, 208)
+main.Active = true
+main.Draggable = true
+
+TextLabel.Parent = main
+TextLabel.BackgroundColor3 = Color3.fromRGB(113, 113, 113)
+TextLabel.Position = UDim2.new(0.0162790697, 0, 0, 0)
+TextLabel.Size = UDim2.new(0, 417, 0, 50)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "sonic and sans"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+sonic.Name = "sonic"
+sonic.Parent = main
+sonic.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+sonic.Position = UDim2.new(0.0162790697, 0, 0.336538464, 0)
+sonic.Size = UDim2.new(0, 193, 0, 124)
+sonic.Font = Enum.Font.SourceSans
+sonic.Text = "Sonic"
+sonic.TextColor3 = Color3.fromRGB(0, 0, 0)
+sonic.TextSize = 65.000
+sonic.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/destylol/masterhubv311/itachi/Main.lua"))()
+end)
+
+sans.Name = "sans"
+sans.Parent = main
+sans.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+sans.Position = UDim2.new(0.520930231, 0, 0.336538464, 0)
+sans.Size = UDim2.new(0, 200, 0, 124)
+sans.Font = Enum.Font.SourceSans
+sans.Text = "Sans"
+sans.TextColor3 = Color3.fromRGB(0, 0, 0)
+sans.TextSize = 65.000
+sans.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/chikocraft/lelegoreng/main/lelegoreng"))()
+end)
